@@ -32,7 +32,7 @@ function generateNDGeometry(dimension: number, geometryType: GeometryType = 'hyp
   const vertices: number[][] = [];
   const edges: [number, number][] = [];
 
-  if (geometryType === 'hypercube' && d <= 5) {
+  if (geometryType === 'hypercube') {
     const count = 1 << d;
     for (let i = 0; i < count; i++) {
       const v: number[] = new Array(d);
@@ -49,7 +49,7 @@ function generateNDGeometry(dimension: number, geometryType: GeometryType = 'hyp
         }
       }
     }
-  } else if (geometryType === 'simplex' || d === 5) {
+  } else if (geometryType === 'simplex') {
     const numVertices = d + 1;
     for (let i = 0; i < numVertices; i++) {
       const v = new Array(d).fill(0);
