@@ -403,7 +403,21 @@ const NVKTimeMachine = () => {
                             <i className="ri-arrow-left-circle-line"></i>
                         </button>
                         <div>
-                            <h1 className="text-2xl md:text-3xl font-bold text-cyan-400 mb-1 font-orbitron">TIME MACHINE</h1>
+                            <div className="flex items-center gap-3 flex-wrap">
+                                <h1 className="text-2xl md:text-3xl font-bold text-cyan-400 mb-1 font-orbitron">TIME MACHINE</h1>
+                                <a
+                                  id="shop-nvk-smartwatches-btn-timemachine"
+                                  href="https://www.nvk.global/collections/nvk-time"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="flex items-center gap-1.5 px-3 py-1 bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-amber-500/20 hover:from-amber-500/30 hover:via-orange-500/30 hover:to-amber-500/30 border border-amber-400/60 hover:border-amber-300 text-amber-300 hover:text-amber-100 font-orbitron font-bold text-xs rounded-full transition-all shadow-[0_0_12px_rgba(245,158,11,0.25)] hover:shadow-[0_0_20px_rgba(245,158,11,0.45)] whitespace-nowrap mb-1"
+                                  title="Shop Official NVK Smartwatches & Timepieces"
+                                >
+                                  <i className="ri-shopping-bag-3-line text-amber-400" />
+                                  <span>Shop NVK Smartwatches</span>
+                                  <i className="ri-external-link-line text-xs opacity-75" />
+                                </a>
+                            </div>
                             <div className="flex items-center gap-2 flex-wrap">
                                 <p className="text-gray-400 text-sm">Quantum Entanglement Engine v2.0</p>
                                 <AIHeaderBadge onClick={() => setIsAISettingsOpen(true)} />
@@ -788,8 +802,19 @@ const NVKTimeMachine = () => {
                 </main>
 
                 {/* Footer Info */}
-                <footer className="mt-4 text-center text-gray-500 text-xs md:text-sm">
+                <footer className="mt-4 text-center text-gray-500 text-xs md:text-sm flex flex-col sm:flex-row items-center justify-between gap-2 px-2">
                   <p>NVK Time Machine - Quantum Core v2.0 | All temporal jumps logged and monitored</p>
+                  <a
+                    id="shop-nvk-smartwatches-btn-footer"
+                    href="https://www.nvk.global/collections/nvk-time"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-amber-400 hover:text-amber-300 transition-colors font-orbitron text-xs font-semibold"
+                  >
+                    <i className="ri-shopping-bag-3-line text-xs" />
+                    <span>Shop NVK Smartwatches</span>
+                    <i className="ri-external-link-line text-[10px] opacity-80" />
+                  </a>
                 </footer>
               </div>
             </div>

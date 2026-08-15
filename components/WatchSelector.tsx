@@ -111,12 +111,28 @@ export const WatchSelector: React.FC<WatchSelectorProps> = ({ currentTime, onSel
       <DynamicTemporalBackground watchFaceName={faceName} />
 
       {/* Top HUD Header: Search & Category Filter */}
-      <div className="z-30 w-full max-w-4xl flex flex-col items-center gap-2 mt-2">
-        <div className="flex items-center justify-between w-full bg-slate-950/80 backdrop-blur-md border border-cyan-500/30 rounded-2xl px-4 py-2 shadow-[0_0_20px_rgba(6,182,212,0.15)]">
-          <div className="flex items-center gap-2 text-cyan-400 font-orbitron text-xs md:text-sm font-bold">
-            <i className="ri-compasses-2-line text-lg animate-pulse" />
-            <span className="hidden sm:inline">MULTIDIMENSIONAL CHRONO MATRIX</span>
-            <span className="sm:hidden">CHRONO MATRIX</span>
+      <div className="z-30 w-full max-w-5xl flex flex-col items-center gap-2 mt-2">
+        <div className="flex items-center justify-between w-full bg-slate-950/85 backdrop-blur-md border border-cyan-500/30 rounded-2xl px-4 py-2 shadow-[0_0_20px_rgba(6,182,212,0.15)] flex-wrap gap-2">
+          <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 text-cyan-400 font-orbitron text-xs md:text-sm font-bold">
+              <i className="ri-compasses-2-line text-lg animate-pulse" />
+              <span className="hidden sm:inline">MULTIDIMENSIONAL CHRONO MATRIX</span>
+              <span className="sm:hidden">CHRONO MATRIX</span>
+            </div>
+
+            {/* Shop NVK Smartwatches Button */}
+            <a
+              id="shop-nvk-smartwatches-btn-header"
+              href="https://www.nvk.global/collections/nvk-time"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-amber-500/20 hover:from-amber-500/30 hover:via-orange-500/30 hover:to-amber-500/30 border border-amber-400/60 hover:border-amber-300 text-amber-300 hover:text-amber-100 font-orbitron font-bold text-xs rounded-xl transition-all shadow-[0_0_15px_rgba(245,158,11,0.25)] hover:shadow-[0_0_20px_rgba(245,158,11,0.45)] whitespace-nowrap"
+              title="Shop Official NVK Smartwatches & Timepieces"
+            >
+              <i className="ri-shopping-bag-3-line text-amber-400 text-sm" />
+              <span>Shop NVK Smartwatches</span>
+              <i className="ri-external-link-line text-xs opacity-75" />
+            </a>
           </div>
 
           {/* Quick Dropdown Picker */}
